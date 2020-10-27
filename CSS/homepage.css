@@ -1,0 +1,79 @@
+pre {
+        color: black;
+        background: white;
+        font-family: monospace;
+        border-width: thick; 
+}
+
+body {
+        background-color:  white;
+        background-image:  none;
+        color:             black;
+        width:             750px;
+        margin:            auto;
+        counter-reset:     section;
+        font-family:       "Lucida Sans Unicode", "Lucida Grande", sans-serif
+}
+
+h1,h2,h3 { text-align:  center; }
+h4,h5,h6 { text-align:  left;   
+           font-weight: 900; }
+             
+P.normal  {
+        margin-left:  10%;
+        margin-right:  10%;
+}
+
+P.widecentered  { text-align:  center; margin-left:  0%; margin-right:  0% }
+P.centeraligned { text-align:  center; }
+P.rightaligned  { text-align:  right }
+P.indented      { text-indent: 5em }
+P.justified     { text-align:  justify }
+P.contact       { text-align:  center;
+                  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                  font-size:   smaller; }
+
+A.navlink:link, A.navlink:active, A.navlink:visited    { color: black;
+                                                         text-decoration:none }
+A.navlink:hover                                        { color: red }
+
+A:link, A:active, A:visited    { color: blue; 
+                                 text-decoration:none }
+A:hover                        { color: red; }
+
+div.lastupdated  { 
+        text-align:  right; 
+        font-size:   smaller;
+}
+
+div.navbar  {
+        margin-left:   0%;
+        margin-right:  0%;
+        text-align:    center;
+}
+
+div.vspace { margin-bottom: 3em }
+        
+          
+hr.navbar  { width:  100% }
+
+hr.divider { width: 100%;
+             margin-top: 3em; 
+             margin-bottom: 3em; }
+
+
+table.schedule { width: 80% }
+tr.spaceunder > td { padding-bottom: 1em }
+td.number {
+          width: 10%;
+          text-align: center;
+          font-weight: 700;
+}
+td.date  { 
+          width: 20%;
+          text-align: center
+}
+td.topic { 
+          width: 70%;
+          text-align: left; 
+}
