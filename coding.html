@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+
+<meta name="description" content="Jinxin Xia - Coding" />
+<meta name="keywords" content="Xia" />
+<title> Jinxin Xia - Coding </title>
+<link rel="StyleSheet" href="CSS/homepage.css" title="homepage" type="text/css" />
+<link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
+
+<script type="text/javascript">
+<!--
+function toggleInfo(articleid,info) {
+
+	var entry = document.getElementById(articleid);
+	var abs = document.getElementById('abs_'+articleid);
+	var key = document.getElementById('key_'+articleid);
+	var rev = document.getElementById('rev_'+articleid);
+	var bib = document.getElementById('bib_'+articleid);
+
+	if (abs && info == 'abstract') {
+		if(abs.className.indexOf('abstract') != -1) {
+		abs.className.indexOf('noshow') == -1?abs.className = 'abstract noshow':abs.className = 'abstract';
+		}
+	} else if (key && info == 'keywords') {
+		if(key.className.indexOf('keywords') != -1) {
+		key.className.indexOf('noshow') == -1?key.className = 'keywords noshow':key.className = 'keywords';
+		}
+	} else if (rev && info == 'review') {
+		if(rev.className.indexOf('review') != -1) {
+		rev.className.indexOf('noshow') == -1?rev.className = 'review noshow':rev.className = 'review';
+		}
+	} else if (bib && info == 'bibtex') {
+		if(bib.className.indexOf('bibtex') != -1) {
+		bib.className.indexOf('noshow') == -1?bib.className = 'bibtex noshow':bib.className = 'bibtex';
+		}		
+	} else { 
+		return;
+	}
+
+	// check if one or the other is available
+	var revshow = false;
+	var absshow = false;
+	var bibshow = false;
+	(abs && abs.className.indexOf('noshow') == -1)? absshow = true: absshow = false;
+	(rev && rev.className.indexOf('noshow') == -1)? revshow = true: revshow = false;	
+	(bib && bib.className == 'bibtex')? bibshow = true: bibshow = false;
+	
+	
+}
+-->
+</script>
+
+<style type="text/css">
+
+table.pubs { border: 0px gray solid; width: 100%; empty-cells: show; }
+thead { height: 1px;}
+
+tr.noshow { display: none;}
+tr.highlight td { background-color: #FFFFFF; border-top: 1px black solid; font-weight: bold; }
+tr.abstract td, tr.review td, tr.bibtex td { background-color: #FFFFFF; border-bottom: 0px black solid; }
+tr.nextshow td { border-bottom: 1px gray solid; }
+tr.bibtex pre { width: 100%; overflow: auto;}
+
+p.infolinks { margin: 0.5em 0em 0em 0em; padding: 0px; }
+p.infostuff { margin: 0.5em 0em 0em 3em; padding: 0px; }
+td a {text-decoration: none;}
+</style>
+
+</head>
+
+<body>
+
+<h1> Jinxin Xia </h1>
+
+<hr class="navbar"/>
+<div class="navbar">
+<table class="navbar" align="center"><tr width="100%">
+<td width="12%" align="center"><a class="navlink" href="index.html"> About </a></td>
+<td width="8%">  </td>
+<td width="12%"><a class="navlink" href="research.html"> Research </a></td>
+<td width="8%">  </td>
+<td width="12%"><a class="navlink" href="coding.html"> Coding </a></td>
+<td width="8%">  </td>
+<td width="12%"><a class="navlink" href="teaching.html"> Teaching </a></td>
+<td width="8%">  </td>
+<td width="12%"><a class="navlink" href="plots.html"> Plots </a></td></tr></table>
+</div>
+<hr class="navbar"/>
+
+<div class="vspace"></div>
+
+<a href="https://github.com/JinxinXia?tab=repositories">GitHub</a>.
+
