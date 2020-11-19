@@ -26,7 +26,7 @@
 <td width="8%">  </td>
 <td width="12%"><a class="navlink" href="teaching.html"> Teaching </a></td>
 <td width="8%">  </td>
-<td width="12%"><a class="navlink" href="plots.html"> Plots </a></td></tr></table>
+<td width="12%"><a class="navlink" href="plots.html"> Mountains </a></td></tr></table>
 </div>
 <hr class="navbar"/>
 
@@ -43,23 +43,35 @@
 
 
 
-<h2>Genotype Quality of Genetic Markers <br> Batch Effects for Microbiome Data</h2>
+<h2>Genotype Quality Check of Genetic Markers <br> Batch Effects for Microbiome Data</h2>
 
 <p class="centeraligned">
 <img align="middle" src="./images/AD_rank_heatmap.png" alt="(Tucker model)" width="434" height="340"/>
-</p
+</p>
+<p class="centeraligned">
+      Fig1.  Heatmap for microbiome data after batch effect removal using rank normalization
+</p>
+
 
 <p class="justified">
-In the first project, we detected poor genotyping of a SNP or a population trend in the regionusing run tests. 
-I contributed to writing and testing codes in R in a Linux high performance computercluster environment.  
-In the second project, we found a batch effects removal method that can applyto all kinds of microbiome datasets, 
-whether they are balanced, skewed, tailed or not.  I proved thatcentered log transformation is not injective, 
-and wrote codes in Python and R for method testing andimplementation.</p>
-	
+
+        We detected poor genotyping of a SNP or a population trend in the regionusing run tests. 
+        I contributed to writing and testing codes in R in a Linux high performance computercluster environment.  We found a batch effects removal method that can applyto all kinds of microbiome datasets, 
+        whether they are balanced, skewed, tailed or not.  I proved thatcentered log transformation is not injective, 
+        and wrote codes in Python and R for method testing andimplementation.
+</p>
+
+<h4>Relevant Materials</h4>
+
+<ul>
+<li>
+<a href="./pdfs/Centered log-ratio transform is not one to one.pdf">Centered log-ratio transformation is non injective proof</a>.
+</li>
+</ul>
 
 <hr class="divider">
 
-<h2>Computation Efficiency, Algorithm </h2>
+<h2>Efficient algorithm for clustering via partitioned local depth </h2>
 
 <p class="centeraligned">
 <!--<img align="left" src="./images/NMF-input4000.png" alt="(original)" width=33%/>
@@ -73,18 +85,27 @@ and wrote codes in Python and R for method testing andimplementation.</p>
 <img align="middle" src="./images/summa.png" alt="(Hyperspectral image tree)" width="608" height="228"/>
 </p>
 
-<p class="justified">In the firstproject, I applied Gauss Newton and Levenberg-Marquardt optimization algorithms to the discrete
-        Jinxin XiaBiostatistics PhD programU-M ID: 63794818optimization problem in fast matrix multiplication.  
-        During this process, I also developed algorithmsfor tensor permutation and tensor derivatives. In the second project,
-        I redesigned a clustering algorithmand improved the data movement efficiency in CPU by O(n<sup>0.5</sup>)</p>
+
+<p class="centeraligned">
+        Fig2.  Algorithm that minmize data movement in cache
+  </p>
+
+<p class="justified"> I applied Gauss Newton and trust optimization algorithms to discover algorithms for fast matrix multiplication.  
+        During this process, I also derived efficient representation for Jacobian and
+        approximate Hessian matrix and implemented them in MATLAB. In the second project,
+        I redesigned a clustering algorithmand improved the data movement efficiency in CPU by O(M<sup>0.5</sup>) given the cache size of M</p>
 
 
-<h4>Relevant Talk</h4>
+<h4>Relevant Materials</h4>
 
 <ul>
 <li>
-<a href="./pdfs/Fast_Matrices.pdf">Fast Matrix Multiplication Challenges and Approaches</a>.
+<a href="./pdfs/Fast_Matrices.pdf">Fast matrix multiplication challenges and approaches</a>.
 </li>
+<li>
+<a href="https://github.com/JinxinXia/PaLD"> Partitioned local depth algorithm witch cache efficiency optimized</a>.
+</li>
+
 </ul>
 
 <hr class="divider">
@@ -96,9 +117,9 @@ and wrote codes in Python and R for method testing andimplementation.</p>
         methods and implemented the less computationally expensive one in MATLAB. Based onthese results, 
         I am completing a thesis about criteria of turning the Broyden Fletcher Goldfarb Shanno(BFGS) optimization 
         algorithm to the Limited-memory BFGS that could apply to all potential compactformulated BFGSs. </p>
-
-
 <hr class="divider">
+
+
 
 
 <div class="vspace"></div>
